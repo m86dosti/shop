@@ -1,0 +1,42 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>shop</title>  
+    <link rel="stylesheet" href="styles/styles.css" />  
+    <script src="scripts/script.js" defer></script>  
+</head>  
+<body>  
+    <main>  
+        <h1>سبد خرید</h1>  
+        <div class="search-container">  
+            <input type="text" id="search-bar" class="search" placeholder="جستجوی محصولات..." oninput="searchProducts()"/>  
+        </div>  
+        <div class="products">  
+            <div class="product">  
+                <img src="images/picture.jpg" alt="Product 1" />  
+                <h4>محصول 1</h4>  
+                <p>توضیحات محصول 1</p>  
+                <p>قیمت: 10000 تومان</p>  
+                <button onclick="addToShop('محصول 1', 'توضیحات محصول 1', 10000)">خرید</button>  
+            </div>  
+            <div class="product">  
+                <img src="images/picture.jpg" alt="Product 2" />  
+                <h4>محصول 2</h4>  
+                <p>توضیحات محصول 2</p>  
+                <p>قیمت: 20000 تومان</p>  
+                <button onclick="addToShop('محصول 2', 'توضیحات محصول 2', 20000)">خرید</button>  
+            </div>  
+            <div class="product">  
+                <img src="images/picture.jpg" alt="Product 3" />  
+                <h4>محصول 3</h4>  
+                <p>توضیحات محصول 3</p>  
+                <p>قیمت: 30000 تومان</p>  
+                <button onclick="addToShop('محصول 3', 'توضیحات محصول 3', 30000)">خرید</button>  
+            </div>  
+        </div>  
+        <div class="carts"></div>  
+    </main>  
+</body>  
+</html>
